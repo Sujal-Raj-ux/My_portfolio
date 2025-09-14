@@ -1,0 +1,16 @@
+.bg-section {
+  background: linear-gradient(45deg, #050505, #000000); 
+  height: 100vh;  /* full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.bg-custom-light-purple {
+  background-color: #4c494dee; /* custom purple */
+}
+
+.hero-text {
+  font-family: 'Georgia', serif;
+}
+

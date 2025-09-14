@@ -1,0 +1,27 @@
+.body {
+    font-family: 'bebas Neue', static;
+    position: absolute;
+    
+  }
+
+  .intro {
+    max-width: 800px;           /* keeps text from being too wide */
+    padding: 20px 30px;         /* spacing inside */
+    border-radius: 10px;        /* rounded corners */
+    text-align: center;         /* center the text inside */
+    line-height: 1.6; 
+    font-size: 80px;           /* big text */
+    margin-top: 200px;          /* pushes it down */
+    margin-left: 50px;          /* pushes it to the right */
+  }
+
+  .summary-container {
+    max-width: 800px;              /* keeps it from stretching too wide */
+    margin: 50px auto;             /* centers it horizontally */
+    padding: 20px 30px;            /* spacing inside */
+    /*border: 2px solid #333;        /* boundary line */
+    border-radius: 10px;           /* smooth corners */   /* light background */
+    text-align: center;            /* center the text */
+    line-height: 1.6;              /* makes text more readable */
+  }
+  
