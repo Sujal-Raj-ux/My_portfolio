@@ -6,17 +6,17 @@ function Intro() {
   return (
     <section
       id="home"
-      className="h-screen flex flex-col md:flex-row items-center justify-center bg-gray-50 px-8"
+      className="h-screen flex flex-col md:flex-row items-center justify-center bg-gray-50 px-8 pt-24 md:pt-32"
     >
       {/* Left Side (Text) */}
-      <div className="flex-1 text-left ml-25">
-        <h1 className="text-5xl font-extrabold mb-4 font-bebas">
+      <div className="flex-1 text-left md:pl-16 px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 font-bebas">
           Hi, I&apos;m <span className="text-blue-600">Sujal Raj</span>
         </h1>
-        <h2 className="text-2xl text-gray-700 mb-2">
+        <h2 className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-2">
           Computer Science & AI Student at NJIT
         </h2>
-        <p className="text-lg text-gray-500 mb-6">
+        <p className="text-base sm:text-lg text-gray-500 mb-6">
           Building AI, software, and data-driven solutions.
         </p>
 
@@ -37,12 +37,12 @@ function Intro() {
         </div>
       </div>
 
-      {/* Right Side (Avatar Circle) */}
-      <div className="flex-1 h-full w-full">
-      <img
+      {/* Right Side (Profile Image) */}
+      <div className="flex-1 flex justify-center items-center mt-8 md:mt-0">
+        <img
           src={ProfilePhoto}
           alt="Sujal Raj"
-          className="w-full h-full object-cover"
+          className="w-40 h-40 sm:w-56 sm:w-56 sm:h-56 lg:w-175 lg:h-170 object-cover rounded-full md:rounded-none -mt-6 md:-mt-24"
         />
       </div>
     </section>
@@ -50,5 +50,3 @@ function Intro() {
 }
 
 export default Intro;
-
-  

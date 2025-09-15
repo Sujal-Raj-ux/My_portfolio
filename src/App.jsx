@@ -22,7 +22,6 @@ function App() {
       {/* About Section */}
       <section
         id="about"
-        className="min-h-screen flex items-center justify-center bg-blue-100"
       >
         <About/>
       </section>
