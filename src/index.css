@@ -1,4 +1,103 @@
 @import "tailwindcss";
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #eff6ff;
+}
+
+.bg-theme-home {
+  background: linear-gradient(160deg, #f8fbff 0%, #eff6ff 45%, #dbeafe 100%);
+}
+
+.bg-theme-about {
+  background: linear-gradient(180deg, #dbeafe 0%, #cfe4fd 100%);
+}
+
+.bg-theme-projects {
+  background: linear-gradient(145deg, #bfdbfe 0%, #93c5fd 55%, #7dd3fc 100%);
+}
+
+.bg-theme-skills {
+  background: linear-gradient(180deg, #e0f2fe 0%, #dbeafe 100%);
+}
+
+.bg-theme-contact {
+  background: linear-gradient(180deg, #dbeafe 0%, #eff6ff 100%);
+}
+
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.section-heading {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: rgb(17 24 39);
+}
+
+@keyframes tagline-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-tagline {
+  animation: tagline-fade-in 0.5s ease-out;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.12);
+}
+
+.glass-card-square {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 20rem;
+}
+
+@media (min-width: 640px) {
+  .glass-card-square {
+    max-width: 26rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .glass-card-square {
+    max-width: 28rem;
+  }
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.1);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.65);
+}

@@ -5,52 +5,18 @@ import About from "./Components/About";
 import Projects from "./Components/Project";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden bg-theme-home">
       <Navbar />
-
-      {/* Home Section */}
-      <section
-        id="home"
-      >
-        <Intro/>
-      </section>
-
-      {/* About Section */}
-      <section
-        id="about"
-      >
-        <About/>
-      </section>
-
-      {/* Projects Section */}
-      <section
-        id="projects"
-      >
-        <Projects/>
-      </section>
-
-      {/* Skills Section */}
-      <section
-        id="skills" className="min-h-screen flex items-center justify-center bg-gray-50"
-      >
-        <Skills/>
-      </section>
-
-      {/* Contact Section */}
-      <section
-        id="contact"
-      >
-        <Contact/>
-      </section>
+      <Intro />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
     </div>
   );
 }
-
-
-
 
 export default App;

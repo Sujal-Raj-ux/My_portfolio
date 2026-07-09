@@ -2,21 +2,20 @@ import React from "react";
 
 function About() {
   return (
-    <section id="about" className="bg-blue-100 py-16 px-6">
+    <section id="about" className="bg-theme-about py-16 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto text-center">
         {/* Title */}
-        <h2 className="text-4xl font-bold mb-8 text-gray-900">About Me</h2>
+        <h2 className="section-heading">About Me</h2>
 
         {/* Paragraphs */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <p className="text-lg text-gray-700 mb-6">
-            I'm a passionate Computer Science and AI student at NJIT with a deep
-            fascination for the intersection of technology and innovation. My
-            journey in tech is driven by curiosity and a desire to create
-            meaningful solutions that can make a real impact.
+        <div className="w-full max-w-3xl mx-auto px-2 sm:px-4">
+          <p className="text-lg text-gray-700 mb-6 break-words">
+            I&apos;m a recent graduate from NJIT with a deep fascination for the intersection
+            of technology and innovation. My journey in tech is driven by curiosity and a desire
+            to create meaningful solutions that can make a real impact.
           </p>
 
-          <p className="text-lg text-gray-700 mb-6">
+          <p className="text-lg text-gray-700 mb-6 break-words">
             My expertise spans across{" "}
             <span className="font-semibold text-gray-900">software engineering</span>,{" "}
             <span className="font-semibold text-gray-900">artificial intelligence</span>, and{" "}
@@ -27,7 +26,7 @@ function About() {
             practical ways to solve real-world problems.
           </p>
 
-          <p className="text-lg text-gray-700 mb-12">
+          <p className="text-lg text-gray-700 mb-12 break-words">
             When I’m not coding, I enjoy traveling and exploring new places, as
             well as staying active through different sports. These experiences
             help me bring fresh perspectives, creativity, and balance into my
@@ -46,8 +45,8 @@ function About() {
             <p className="text-gray-600 font-medium">Technologies</p>
           </div>
           <div>
-            <h3 className="text-3xl font-bold text-blue-600">NJIT</h3>
-            <p className="text-gray-600 font-medium">Current Student</p>
+            <h3 className="text-3xl font-bold text-blue-600">2</h3>
+            <p className="text-gray-600 font-medium">Internships</p>
           </div>
         </div>
       </div>

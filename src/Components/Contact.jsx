@@ -1,73 +1,76 @@
 import React from "react";
-import LinkedInLogo from "../assets/LinkedIn_logo.png"; // adjust path if needed
+import LinkedInLogo from "../assets/LinkedIn_logo.png";
 import Google from "../assets/google.png";
 import Github from "../assets/github.png";
 
+const contactItems = [
+  {
+    icon: Google,
+    alt: "Email",
+    label: "Email",
+    href: "mailto:mr.sujalraj@gmail.com",
+    text: "mr.sujalraj@gmail.com",
+  },
+  {
+    icon: LinkedInLogo,
+    alt: "LinkedIn",
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/sujalraj21",
+    text: "linkedin.com/in/sujalraj21",
+    external: true,
+  },
+  {
+    icon: Github,
+    alt: "GitHub",
+    label: "GitHub",
+    href: "https://github.com/Sujal-Raj-ux",
+    text: "github.com/Sujal-Raj-ux",
+    external: true,
+  },
+];
+
 function Contact() {
   return (
-    <section id="contact" className="bg-white py-20 px-6">
-  <div className="max-w-4xl mx-auto text-center">
-    {/* Title */}
-    <h2 className="text-4xl font-bold text-gray-900 mb-4">
-      Get In Touch
-    </h2>
-    <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-      Let's connect and discuss opportunities, collaborations, or just chat about technology
-    </p>
+    <section id="contact" className="bg-theme-contact py-20 px-4 sm:px-6">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="section-heading">Get In Touch</h2>
+        <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+          Let&apos;s connect and discuss opportunities, collaborations, or just chat about
+          technology
+        </p>
 
-    {/* Centered Contact Info */}
-    <div className="space-y-6 flex flex-col items-center">
-      {/* Email */}
-      <div className="flex items-center gap-4">
-        <img src={Google} alt="Google_logo" className="w-8 h-8 object-contain" />
-        <div>
-          <h4 className="font-semibold text-gray-800">Email</h4>
-          <a href="mailto:sr2452@njit.edu" className="text-gray-600 hover:text-blue-600">
-            sr2452@njit.edu
-          </a>
+        <div className="flex justify-center">
+          <div className="flex flex-col gap-6">
+            {contactItems.map((item) => (
+              <div key={item.label} className="flex items-center gap-4">
+                <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                  <img
+                    src={item.icon}
+                    alt={item.alt}
+                    className="w-8 h-8 object-contain"
+                  />
+                </div>
+                <div className="text-left min-w-0">
+                  <h4 className="font-semibold text-gray-800">{item.label}</h4>
+                  <a
+                    href={item.href}
+                    target={item.external ? "_blank" : undefined}
+                    rel={item.external ? "noreferrer" : undefined}
+                    className="text-gray-600 hover:text-blue-600 break-all"
+                  >
+                    {item.text}
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+
+        <footer className="mt-16 border-t border-blue-200 pt-6 text-center text-gray-600">
+          © {new Date().getFullYear()} Sujal Raj. All rights reserved.
+        </footer>
       </div>
-
-      {/* LinkedIn */}
-      <div className="flex items-center gap-4">
-        <img src={LinkedInLogo} alt="LinkedIn" className="w-8 h-8 object-contain" />
-        <div>
-          <h4 className="font-semibold text-gray-800">LinkedIn</h4>
-          <a
-            href="https://linkedin.com/in/sujalraj21"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-600 hover:text-blue-600"
-          >
-            linkedin.com/in/sujalraj21
-          </a>
-        </div>
-      </div>
-
-      {/* GitHub */}
-      <div className="flex items-center gap-4">
-        <img src={Github} alt="Github_logo" className="w-8 h-8 object-contain" />
-        <div>
-          <h4 className="font-semibold text-gray-800">GitHub</h4>
-          <a
-            href="https://github.com/Sujal-Raj-ux"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-600 hover:text-blue-600"
-          >
-            github.com/Sujal-Raj-ux
-          </a>
-        </div>
-      </div>
-    </div>
-
-    {/* Footer */}
-    <footer className="mt-16 border-t pt-6 text-center text-gray-500">
-      © {new Date().getFullYear()} Sujal Raj. All rights reserved.
-    </footer>
-  </div>
-</section>
-
+    </section>
   );
 }
 
