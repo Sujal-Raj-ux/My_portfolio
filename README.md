@@ -1,6 +1,6 @@
 
 # My_portfolio
-This is my portfolio code. 
+This is my portfolio code. https://sujal-raj.netlify.app/
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
